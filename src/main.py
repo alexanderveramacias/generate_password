@@ -8,6 +8,8 @@ characters=string.punctuation
 def generate_password(length):
     all_characters=letters+numbers+characters
     password="".join(random.choice(all_characters) for index in range(length))
-    return password
-generate_password(10)
+    return password 
+length_password=int(input("minimum entry 10 characters: "))
+password=generate_password(length_password)
+print(password)
 
